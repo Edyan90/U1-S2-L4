@@ -117,3 +117,13 @@ console.log(cutString("ABCDEFGHIJKLMNOPQRSTUVWXYZ"));
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 console.log("-----------------ESERCIZIO 10-------------");
+function giveMeRandom(n) {
+  const arrayNumeri = [];
+  for (let index = 0; index < n; index++) {
+    const num = Math.floor(Math.random() * 11);
+    arrayNumeri.push(num);
+  }
+
+  return arrayNumeri;
+}
+console.log(giveMeRandom(5));
